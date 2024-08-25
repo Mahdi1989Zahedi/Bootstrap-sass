@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+div.line-foother {
+  width: 70%;
+  height: 5px;
+  background-color: rgb(248, 213, 17);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+}
+
+footer {
+  margin-top: 100px;
+  color: white;
+}
+footer div.foother-top p.foother-top {
+  width: 80%;
+  text-align: justify;
+  font-size: 14px;
+  padding-top: 40px;
+}
+footer div.foother-top div.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+footer div.foother-top div.contact a {
+  color: white;
+  margin-top: 10px;
+  text-decoration: none;
+}
+footer div.foother-top div.contact a i {
+  font-size: 30px;
+}
+footer div.foother-top div.service span {
+  padding-right: 10px;
+}
+footer div.foother-top div.service h5 {
+  padding-bottom: 10px;
+}
+footer div.foother-top div.service ul {
+  list-style: none;
+}
+footer div.foother-top div.service ul li {
+  padding-bottom: 8px;
+}
+footer div.foother-top div.service ul li a {
+  text-decoration: none;
+}
+footer div.foother-top div.rent span {
+  padding-right: 10px;
+}
+footer div.foother-top div.rent h5 {
+  padding-bottom: 10px;
+}
+footer div.foother-top div.rent ul {
+  list-style: none;
+}
+footer div.foother-top div.rent ul li {
+  padding-bottom: 8px;
+}
+footer div.foother-top div.rent ul li a {
+  text-decoration: none;
+}
+footer div.foother-top div.contact-us span {
+  padding-right: 10px;
+}
+footer div.foother-top div.contact-us h5 {
+  padding-bottom: 10px;
+}
+footer div.foother-top div.contact-us ul {
+  list-style: none;
+}
+footer div.foother-top div.contact-us ul li {
+  padding-bottom: 8px;
+}
+footer div.foother-top div.contact-us ul li a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=foother.css.map */

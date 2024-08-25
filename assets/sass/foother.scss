@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+div.line-foother {
+    width: 70%;
+    height: 5px;
+    background-color:rgb(248, 213, 17);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+}
+
+footer {
+    margin-top: 100px;
+    color: white;
+
+    div.foother-top {
+        p.foother-top {
+            width: 80%;
+            text-align: justify;
+            font-size: 14px;
+            padding-top: 40px;
+        }
+        div.contact {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+
+            a {
+                color: white;
+                margin-top: 10px;
+                text-decoration: none;
+                
+            i {
+                font-size: 30px;
+            }
+            }
+
+        }
+        div.service {
+            span{
+                padding-right: 10px;
+            }
+            h5 {
+                padding-bottom: 10px;
+            }
+            ul {
+                list-style: none;
+                li{
+                    padding-bottom: 8px;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        div.rent {
+            span{
+                padding-right: 10px;
+            }
+            h5 {
+                padding-bottom: 10px;
+            }
+            ul {
+                list-style: none;
+                li{
+                    padding-bottom: 8px;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        div.contact-us  {
+            span{
+                padding-right: 10px;
+            }
+            h5 {
+                padding-bottom: 10px;
+            }
+            ul {
+                list-style: none;
+                li{
+                    padding-bottom: 8px;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

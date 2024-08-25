@@ -1,0 +1,64 @@
+@font-face {
+  font-family: iransans;
+  src: url(../font/iransans.woff2);
+  src: url(../font/IRANSansWebFaNum.eot);
+  src: url(../font/IRANSansWebFaNum.ttf);
+  src: url(../font/IRANSansWebFaNum.woff);
+}
+@font-face {
+  font-family: name-font;
+  src: url(../font/name-font/PlaywriteBEVLG-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: car-font;
+  src: url(../font/car-font/BebasNeue-Regular.ttf);
+}
+:root {
+  --color-dark: #212529;
+  --color-btn: #4e57d4;
+  --color-btn-light: #6970dd;
+  --color-body: #727272;
+  --box-shadow: 0 15px 25px #2b2b2b;
+  --transition: all 0.5s ease;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: iransans;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+
+.theme-shadow {
+  box-shadow: var(--box-shadow);
+}
+
+.image-zoom-wraper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-zoom-wraper img {
+  transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wraper img {
+  transform: scale(1.1);
+}
+
+div.line {
+  width: 200px;
+  height: 5px;
+  background-color: #212529;
+}
+
+/*# sourceMappingURL=main.css.map */

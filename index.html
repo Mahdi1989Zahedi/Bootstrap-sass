@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navaran</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/import.css">
+</head>
+
+<body style="direction: rtl;" id="htmlPage">
+    <!-- start header -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="direction: rtl;">
+            <div class="container">
+                <div class="logo d-md-none d-none  d-lg-inline">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/image/logo/navaran-logo.webp" alt="">
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <div class="btn-dark-mode">
+                        <input type="checkbox" class="checkbox" id="checkbox">
+                        <label for="checkbox" class="checkbox-label">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <span class="ball"></span>
+                        </label>
+                    </div>
+
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><i
+                                    class="fa-solid fa-house"><span>صفحه اصلی</span></i></a>
+                        </li>
+                        <li class="nav-item dropdown" style="direction: rtl; text-align: justify;">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-car"></i><span>محصولات</span></a>
+                            </a>
+                            <ul class="dropdown-menu" style="direction: rtl;">
+                                <li class="text-end"><a class="dropdown-item" href="./others-html/rent.html"> اجاره
+                                        خودرو خارجی</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="text-end"><a class="dropdown-item" href="./others-html/iran.html"> اجاره
+                                        خودرو ایرانی</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="text-end"><a class="dropdown-item" href="./others-html/prodouct.html">خرید
+                                        خودرو</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./others-html/contact.html"><i
+                                    class="fa-solid fa-phone"></i><span>تماس با ما</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#review"><i
+                                    class="fa-solid fa-comment"></i><span>نظرات</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./others-html/news.html"><i
+                                    class="fa-solid fa-paperclip"></i><span>اخبار</span></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="navbar-brand enter nav-link" href="#" data-bs-toggle="modal"
+                    data-bs-target="#regester"><span>ورود / ثبت نام</span><i
+                        class="fa-solid fa-right-to-bracket"></i></a>
+            </div>
+        </nav>
+    </header>
+    <!-- End of header -->
+
+    <!-- regester-form-modal -->
+    <div class="modal" tabindex="-1" id="regester" style="direction: rtl; background-color: rgb(82, 82, 82);">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-warning">فرم ثبت نام ناوران</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="name">
+                            <label for="floatingInput" style="direction: rtl; margin-left: 400px;"><i
+                                    class="fa-solid fa-user text-secondary"></i> نام : </label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput" style="direction: rtl; margin-left: 340px;"><i
+                                    class="fa-solid fa-envelope text-secondary"></i> آدرس ایمیل : </label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control " id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword" style="margin-left: 365px;"><i
+                                    class="fa-solid fa-lock text-secondary"></i> رمز ورود : </label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control " id="number" placeholder="number">
+                            <label for="floatingPassword" style="margin-left: 385px;"><i
+                                    class="fa-solid fa-phone text-secondary"></i> تلفن : </label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control " id="city" placeholder="city">
+                            <label for="floatingPassword" style="margin-left: 390px;"><i
+                                    class="fa-solid fa-location-dot text-secondary"></i> شهر : </label>
+                        </div>
+                        <input type="submit" class="btn btn-primary btn-lg" value="ارسال"
+                            style="display: block; width: 100%;">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-warning" data-bs-dismiss="modal">انصراف</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End regester-form-modal -->
+
+    <!-- start home section -->
+    <section class="home min-vh-100 d-flex align-items-center text-center" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="informaition col-12">
+                    <h1 class="text-uppercase">شرکت بازرگانی ناوران</h1>
+                    <p>ناواران با شعار "اولین اجاره خودروی ایرانی به سبک جهانی" با رویکرد اعتماد به مشتری می باشد.</p>
+                    <div class="button">
+                        <a href="#Question box" class="btn btn-brand more">اطلاعات بیشتر</a>
+                        <a href="#about" class="btn btn-brand info">درباره ما</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of home section -->
+
+    <!-- start about section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="image col-12 col-lg-6">
+                    <img src="./assets/image/about/about-img-2.jpg" class="about" alt="car">
+                </div>
+                <div class="about col-12 col-lg-6">
+                    <h2>درباره ناوران : </h2>
+                    <div class="line"></div>
+                    <br>
+                    <p class="about">
+                        ناواران با شعار "اولین اجاره خودروی ایرانی به سبک جهانی" با رویکرد اعتماد به مشتری، در ابتدا با
+                        ایجاد ناوگانی متشکل از هزار خودروی صفر کیلومتر در سراسر کشور ایران از انواع اقتصادی تا تجاری و
+                        در تمامی شهرهای اصلی کشور و تمامی فرودگاه های اصلی و با هدف ارتقاء واقعی خدمات خوب و خدماتی
+                        همانند کشورهای پیشرفته در میهن عزیزمان ایران سرمایه‌گذاری نموده و این مهم با جلب همکاری سایر
+                        شرکای تجاری و جذب سرمایه تا رسیدن به هدف ایجاد شبکه ای بالغ بر صد هزار خودرو و گسترش شبکه به
+                        کلیه شهرستانهای کوچک ایران ادامه خواهد یافت. مدل تجاری ناواران ، با محوریت اعتماد به مشتری ،
+                        امکان اجاره خودرو با استانداردهای روز دنیا و بدون دریافت تضامین سنتی همانند چک و سفته و اسناد
+                        ملکی را فراهم می سازد.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card border-success">
+                            <div class="card-body">
+                                <img src="./assets/image/iconboxes-icon-4.svg" alt=""
+                                    style="width: 100px; margin: 15px auto; display: block;">
+                                <h5 class="text-center">ارائه فاکتور رسمی</h5>
+                                <p class="text-muted text-center" style="direction: rtl;">پرداخت مالیات ، ارائه فاکتور
+                                    رسمی و عملکرد صحیح طبق قوانین جاری کشور ...</p>
+                                <a href="#" class="btn btn-success" style="display: block;" data-bs-toggle="modal"
+                                    data-bs-target="#modal-1">اطلاعات بیشتر</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card border-danger">
+                            <div class="card-body">
+                                <img src="./assets/image/iconboxes-icon-3.svg" alt=""
+                                    style="width: 100px; margin: 15px auto; display: block;">
+                                <h5 class="text-center">رزرو رایگان با امتیازات</h5>
+                                <p class="text-muted text-center" style="direction: rtl;">مشترکین ناواران می‌توانند با
+                                    انجام رزرو برای دوستان و همکاران خود، امتیاز ...</p>
+                                <a href="#" class="btn btn-danger" style="display: block;" data-bs-toggle="modal"
+                                    data-bs-target="#modal-2">اطلاعات بیشتر</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card border-primary">
+                            <div class="card-body">
+                                <img src="./assets/image/iconboxes-icon-2.svg" alt=""
+                                    style="width: 100px; margin: 15px auto; display: block;">
+                                <h5 class="text-center">ارائه ماشین های تمیز و نو</h5>
+                                <p class="text-muted text-center" style="direction: rtl;">یکی از دلایل موفقیت و محبوبیت
+                                    خودروهای ناواران، نو و تمیز بودن ...</p>
+                                <a href="#" class="btn btn-primary" style="display: block;" data-bs-toggle="modal"
+                                    data-bs-target="#modal-3">اطلاعات بیشتر</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-3">
+
+                        <div class="card border-warning">
+                            <div class="card-body">
+                                <img src="./assets/image/iconboxes-icon-1.svg" alt=""
+                                    style="width: 100px; margin: 15px auto; display: block;">
+                                <h5 class="text-center">امداد رسانی در کمترین زمان</h5>
+                                <p class="text-muted text-center" style="direction: rtl;">شبکه تحت پوشش ناواران، که با
+                                    همکاری شرکای تجاری در خدمت مشتریان ...</p>
+                                <a href="#" class="btn btn-warning" style="display: block;" data-bs-toggle="modal"
+                                    data-bs-target="#modal-4">اطلاعات بیشتر</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of about section -->
+
+    <!-- start modal informaitiom -->
+    <!-- modal-1 -->
+    <div class="modal" tabindex="-1" id="modal-1" style="direction: rtl;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> ارائه فاکتور رسمی</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <p style="text-align: justify;">پرداخت مالیات ، ارائه فاکتور رسمی و عملکرد صحیح طبق قوانین جاری کشور
+                        وظیفه‌ای دو‌طرفه می‌باشد و مشتریان همواره می بایست از افراد بی‌اعتباری که فعالیت غیر شفاف و
+                        زیرزمینی دارند پرهیز کنند زیرا با هزینه‌های ظاهری کمتر، جریمه ها ، هزینه‌ها و مشکلات بسیاری را
+                        برای مشتری به همراه خواهند داشت</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">بستن</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal-1 -->
+
+    <!-- modal-2 -->
+    <div class="modal" tabindex="-1" id="modal-2" style="direction: rtl;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">رزرو رایگان با امتیاز</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <p style="text-align: justify;">مشترکین ناواران می‌توانند با انجام رزرو برای دوستان و همکاران خود،
+                        امتیاز رزروهای ایشان را در کاربر خود ذخیره نموده و با رسیدن به حداقل مبلغ جهت رزرو ، هزینه یک
+                        اجاره را به صورت کامل از طریق این امتیازها پرداخت نمایند. پس چنانچه شما برای آشنایان زحمت رزرو
+                        خودرو را انجام می‌دهید ، زحمت شما با اجاره های رایگان برای خودتان جبران خواهد شد.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">بستن</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal-2 -->
+
+    <!-- modal-3 -->
+    <div class="modal" tabindex="-1" id="modal-3" style="direction: rtl;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">ارائه ماشین های همیشه تمیز و نو</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <p style="text-align: justify;">یکی از دلایل موفقیت و محبوبیت خودروهای ناواران، نو و تمیز بودن
+                        خودروهاست، هر خودرو بعد از هر اجاره سرویس و شستشو شده و تمامی موارد فنی آن توسط مسئول مرتبط
+                        کنترل میگردد. همچنین طبق قرارداد جداگانه با شرکتهای خدمات پس از فروش خودرو، بعد از هر چندبار
+                        اجاره، خودروها مورد بازدید کلی قرار میگیرند. تمامی سرویسهای دوره ای و بازدیدهای فنی خودروها با
+                        دقت خاص و بیش از تعاریف استاندارد انجام میگردد و به همین دلیل همواره خودروها سالم و نو نگاه
+                        داشته میشوند، خودروهایی که تا حدودی فرسودگی پیدا کرده و یا کیلومتر آنها از حدی بالاتر رود، توسط
+                        واحد تأمین خودرو از شبکه خارج و با خودروی صفر کیلومتر جایگزین میگردند. خودروهای ناواران همانند
+                        خودروهای شخصی از ابتدا دارای لوازم اضافی مانند روکش صندلی، روکش فرمان، دستگاه مکان یاب، نمدهای
+                        صداگیر و سایر ادوات لازم میباشند و کشیدن سیگار در این خودرو ها ممنوع است. این دقت و سلیقه در
+                        نگهداری خودروها بدلیل اصل اهمیت به شخصیت مشتری بوده و دلیل جذابیت این خودروها درک این موارد توسط
+                        مشتریان میباشد.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">بستن</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal-3 -->
+
+    <!-- modal-4 -->
+    <div class="modal" tabindex="-1" id="modal-4" style="direction: rtl;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">امدادرسانی کمتر از 30 دقیقه در هر نقطه از ایران</h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body">
+                    <p style="text-align: justify;">شبکه تحت پوشش ناواران، که با همکاری شرکای تجاری در خدمت مشتریان قرار
+                        گرفته است، شامل 2000 نقطه در سراسر کشور ایران و مناطق آزاد تجاری می‌باشد که باعث شده سرعت امداد
+                        رسانی در هر نقطه ایران به کمتر از 30 دقیقه کاهش یابد ، امدادگران و خودروهای امدادی همگی مجهز به
+                        تجهیزات جهت رفع معایب و تعمیرات ساده بوده و بسیاری از مشکلات در همین مرحله به سادگی رفع می
+                        گردند.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">بستن</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal-4 -->
+    <!-- End of modal informaitiom -->
+
+
+    <!-- start servise section style  -->
+    <section class="servise" id="servise">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="title">
+                        <h3>خدمات شرکت ناوران</h3>
+                        <div class="line-center text-center"></div>
+                        <p>
+                            ناواران با شعار "اولین اجاره خودروی ایرانی به سبک جهانی" با رویکرد اعتماد به مشتری می باشد.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="icon-box">
+                            <img src="./assets/image/logo/logo-1.webp" alt=""
+                                style="width: 100px; margin: 15px auto; display: block;">
+                        </div>
+                        <h5 class="mt-4 mb-3">بدون نیاز به ضامن</h5>
+                        <p>
+                            مشترکین ناواران می‌توانند با انجام رزرو برای دوستان و همکاران خود، امتیاز ..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="icon-box">
+                            <img src="./assets/image/logo/logo-2.webp" alt=""
+                                style="width: 100px; margin: 15px auto; display: block;">
+                        </div>
+                        <h5 class="mt-4 mb-3">کوتاه بودن فرایند</h5>
+                        <p>
+                            مشترکین ناواران می‌توانند با انجام رزرو برای دوستان و همکاران خود، امتیاز ..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="icon-box">
+                            <img src="./assets/image/logo/logo-3.webp" alt=""
+                                style="width: 100px; margin: 15px auto; display: block;">
+                        </div>
+                        <h5 class="mt-4 mb-3">رزرو رایگان با امتیازات</h5>
+                        <p>
+                            مشترکین ناواران می‌توانند با انجام رزرو برای دوستان و همکاران خود، امتیاز ..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="icon-box">
+                            <img src="./assets/image/logo/logo-4.webp" alt=""
+                                style="width: 100px; margin: 15px auto; display: block;">
+                        </div>
+                        <h5 class="mt-4 mb-3">رزرو غیر حضوری</h5>
+                        <p>
+                            مشترکین ناواران می‌توانند با انجام رزرو برای دوستان و همکاران خود، امتیاز ..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="icon-box">
+                            <img src="./assets/image/logo/logo-5.webp" alt=""
+                                style="width: 100px; margin: 15px auto; display: block;">
+                        </div>
+                        <h5 class="mt-4 mb-3">پرداخت قسطی</h5>
+                        <p>
+                            مشترکین ناواران می‌توانند با انجام رزرو برای دوستان و همکاران خود، امتیاز ..
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="service theme-shadow p-lg-5 p-4">
+                        <div class="icon-box">
+                            <img src="./assets/image/logo/logo-6.webp" alt=""
+                                style="width: 100px; margin: 15px auto; display: block;">
+                        </div>
+                        <h5 class="mt-4 mb-3">بدون کارمزد</h5>
+                        <p>
+                            مشترکین ناواران می‌توانند با انجام رزرو برای دوستان و همکاران خود، امتیاز ..
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- End of servise section style -->
+
+    <!-- Start Counter section -->
+    <section class="Counter" id="Counter">
+        <div class="container text-center">
+            <div class="row">
+                <div class="title-Counter col-12 text-center">
+                    <div class="title">
+                        <h3>خانواده ناوران</h3>
+                        <div class="line-center text-center"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="item-Counter col-lg-3 col-6">
+                    <h6>دنبال کنندگان :</h6>
+                    <h2>+60 M</h2>
+                </div>
+                <div class="item-Counter col-lg-3 col-6">
+                    <h6>مشتریان :</h6>
+                    <h2>+20 M</h2>
+                </div>
+                <div class="item-Counter col-lg-3 col-6">
+                    <h6>کارکنان :</h6>
+                    <h2>+10 K</h2>
+                </div>
+                <div class="item-Counter col-lg-3 col-6">
+                    <h6>نمایندگی ها :</h6>
+                    <h2>+200 </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Counter section -->
+
+
+    <!-- Start sujest section -->
+    <section class="sujest" id="sujest">
+        <div class="container">
+            <div class="row">
+                <div class="title-Counter col-12 text-center">
+                    <div class="title">
+                        <h3>پیشنهادات ویژه</h3>
+                        <div class="line-center text-center"></div>
+                        <p class="position-l">
+                            ناواران با شعار "اولین اجاره خودروی ایرانی به سبک جهانی" با رویکرد اعتماد به مشتری می باشد.
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-6">
+                        <div class="sujest-item image-zoom">
+                            <div class="div image image-zoom-wraper">
+                                <img src="./assets/image/sujest/sujest-1.png" alt="">
+                            </div>
+                            <div class="info-car" id="info-car">
+                                <h4>BMW 5er Limousine</h4>
+                                <h6>سال ساخت : 2024</h6>
+                                <h5 class="gheimat">قیمت : 30.000$</h5>
+                                <button class="buy">خرید</button>
+                            </div>
+                            <button class="btn-hidden" id="btn-hidden">اطلاعات بیشتر</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="sujest-item image-zoom">
+                            <div class="div image image-zoom-wraper">
+                                <img src="./assets/image/sujest/sujest-2.png" alt="">
+                            </div>
+                            <div class="info-car" id="info-car-2">
+                                <h4>BMW 5er Limousine</h4>
+                                <h6>سال ساخت : 2024</h6>
+                                <h5 class="gheimat">قیمت : 50.000$</h5>
+                                <button class="buy">خرید</button>
+                            </div>
+                            <button class="btn-hidden" id="btn-hidden-2">اطلاعات بیشتر</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="sujest-item image-zoom">
+                            <div class="div image image-zoom-wraper">
+                                <img src="./assets/image/sujest/sujest-3.png" alt="">
+                            </div>
+                            <div class="info-car" id="info-car-3">
+                                <h4>BMW 5er Limousine</h4>
+                                <h6>سال ساخت : 2024</h6>
+                                <h5 class="gheimat">قیمت : 60.000$</h5>
+                                <button class="buy">خرید</button>
+                            </div>
+                            <button class="btn-hidden" id="btn-hidden-3">اطلاعات بیشتر</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="sujest-item image-zoom">
+                            <div class="div image image-zoom-wraper">
+                                <img src="./assets/image/sujest/sujest-4.png" alt="">
+                            </div>
+                            <div class="info-car" id="info-car-4">
+                                <h4>BMW 5er Limousine</h4>
+                                <h6>سال ساخت : 2024</h6>
+                                <h5 class="gheimat">قیمت : 30.000$</h5>
+                                <button class="buy">خرید</button>
+                            </div>
+                            <button class="btn-hidden" id="btn-hidden-4">اطلاعات بیشتر</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of sujest section -->
+
+
+    <!-- header -->
+    <figure class="head text-center pt-4 mt-5">
+        <blockquote class="head blockquote">
+            <p class="head "> محصولات</p>
+        </blockquote>
+        <figcaption class="blockquote-footer text-white">
+            برای مشاهده محصولات از prodout.json استفاده کنید .
+            http://localhost:3000/prodouct
+        </figcaption>
+    </figure>
+    <!-- header -->
+
+
+    <!-- start section prodouct -->
+    <section class="prodouct" id="prodouct" style="direction: rtl;">
+        <div class="container">
+            <div class="row prodouct">
+            </div>
+        </div>
+    </section>
+    <!-- End of section prodouct -->
+
+
+    <!-- Start contact section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="title-Counter col-12 text-center">
+                    <div class="title">
+                        <h3>نظرات خود را با ما به اشترک بگذارید</h3>
+                        <div class="linne text-center"></div>
+                        <p class="position-l">
+                            ناواران با شعار "اولین اجاره خودروی ایرانی به سبک جهانی" با رویکرد اعتماد به مشتری می باشد.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center form">
+                <div class="col-lg-8">
+                    <form action="#" class="row g-3 p-lg-5 p-4 bg-white">
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="نام : ">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="نام خانوادگی : ">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="email" class="form-control" placeholder=" ایمیل : ">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="text" class="form-control" placeholder=" موضوع : ">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <textarea name="message" id="message" rows="5" class="form-control"
+                                placeholder="نظرات شما : "></textarea>
+                        </div>
+                        <div class="form-group col-lg-12 d-grid">
+                            <button class="btn">ارسال</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of contact section -->
+    <br>
+    <br>
+    <br>
+
+
+    <!-- Question box -->
+    <div class="question container" style="direction: rtl;" id="Question box">
+        <div class="row">
+            <h2 class="text-success" style="text-align: center;"> <span id="#question"> <i
+                        class="fa-solid fa-question"></i> سوالات متداول اجاره خودرو</i></span></h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item mb-3 border bg-body-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            چگونه با ناوران یک خودرو اجاره کنیم؟
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>پس از ورود به سایت ناواران، شما می توانید شهر موردنظرتان را انتخاب و لیست ماشین های
+                                ناواران به همراه میزان تخفیف و شروع قیمت اجاره هر کدام را مشاهده کنید. بعد از انتخاب
+                                خودرو، کافی است بازه زمانی و محل دریافت ماشین را معین و درخواست خود را ثبت کنید. با ثبت
+                                درخواست، تیم پشتیبانی ناواران برای تایید درخواست، با شما تماس گرفته و رزرو اجاره خودرو
+                                شما را قطعی خواهند کرد. به همین سادگی!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3 border bg-body-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            چه مدارکی برای اجاره خودرو لازم است؟
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>در زمان اجاره ماشین بدون راننده با ناواران، نیاز به ارائه هرگونه مدرکی نظیر چک، سفته، سند
+                                منزل و... بابت ضمانت نمی باشد. ناواران با رویکرد اعتماد به مشتری، خدمات اجاره خودرو را
+                                بدون نیاز به هرگونه ضمانت ارائه می دهد که این شیوه، آسان ترین شرایط اجاره خودرو در ایران
+                                محسوب می شود.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3 border bg-body-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            نحوه محاسبه قیمت اجاره خودرو چگونه است؟
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>نحوه محاسبه قیمت اجاره خودرو بر اساس تعداد روز بوده که در دو حالت (با محدودیت کیلومتر) یا
+                                (عدم محدودیت کیلومتر) درنظر گرفته می شود. شما می توانید با مراجعه به صفحه لیست قیمت
+                                اجاره خودرو ناواران، مناسب ترین قیمت های اجاره خودرو به همراه تخفیف های ویژه اجاره ماشین
+                                ناواران را بررسی کنید.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3 border bg-body-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            حداقل مدت کرایه ماشین چقدر است؟
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>باتوجه به اینکه تمامی ماشین های ناواران تحت مالکیت رسمی این شرکت می باشند، ناواران برخلاف
+                                دیگر وب سایت های اجاره ماشین، هیچگونه محدودیتی در خصوص مدت زمان اجاره ماشین ارائه نمی
+                                دهد؛ شما می توانید با ناواران از 1 تا هر چند روز، خودرو دلخواهتان را به صورت کامالا
+                                آنلاین اجاره کنید.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3 border bg-body-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            محل تحویل و عودت خودرو چگونه است؟
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>محل تحویل و عودت خودرو، توسط شما انتخاب می شود. باتوجه به وجود شعب ناواران در سرتاسر
+                                ایران، حتا این امکان برای شما فراهم است که ماشین مورد نظرتان را در شهر مبدا تحویل بگیرید
+                                و در شهری دیگر تحویل دهید. علاوه بر اینکه ایستگاه های اختصاصی ناواران در اکثر هتل ها و
+                                فرودگاه های مختلف ایران و... آماده خدمت رسانی به شما می باشند.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3 border bg-body-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                            خدمات اجاره ماشین ناواران ؟
+                        </button>
+                    </h2>
+                    <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>باتوجه به موقعیت ایستگاه ها و شعب مختلف ناواران، امکان دریافت خدمات اجاره خودرو در اکثر
+                                نقاط و شهرهای ایران امکان پذیر است. برای مثال، اجاره خودرو در تهران، مشهد، رشت، کرمان و
+                                دیگر شهرها امکان پذیر است. (مشاهده لیست کامل شهرها » در وب سایت ناواران)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3 border bg-body-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                            چرا باید با ناواران خودرو اجاره کنیم؟
+                        </button>
+                    </h2>
+                    <div id="collapseseven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>ناواران، تنها شرکت دارای مجوز رسمی اجاره خودرو ایرانی می باشد. تمامی ماشین ها جز ناوگان
+                                اختصاصی ناواران می باشند و خبری از وجود واسطه نمی باشد؛ نبود واسطه یعنی تضمین مناسب ترین
+                                قیمت اجاره ماشین! به همین خاطر است که ناواران هیچ محدودیتی برای حداقل مدت زمان اجاره
+                                خودرو برای شما تعیین نمی کند. از طرفی، رویکرد جهانی ناواران، خدمات اجاره خودرو را بدون
+                                نیاز به ارائه هرگونه چک، سند، سفته و... برای شما فراهم می کند. از دیگر ویژگی های اجاره
+                                خودرو با شرایط آسان، امکان رزرو اجاره خودرو به صورت کاملا آنلاین است. همچنین، زمان و محل
+                                دریافت و یا عودت خودرو نیز توسط شما تعیین می شود. ارائه پشتیبانی و امدادرسانی های 24
+                                ساعته در هر نقطه از ایران وجود دارد. تعویض خودرو شما در صورت وجود هرگونه نقص فنی، ارائه
+                                پوشش های بیمه ای کامل و ده ها مزیت دیگر، ناواران را به رتبه یک اجاره خودرو در ایران
+                                تبدیل کرده اند.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3 border bg-body-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                            آیا امکان تحویل خودرو در فرودگاه وجود دارد؟
+                        </button>
+                    </h2>
+                    <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>بله. وجود شعب و ایستگاه های مختلف ناواران در فرودگاه ها، هتل ها و دیگر نقاط شهرهای مختلف
+                                ایران، امکان دریافت خودرو در فرودگاه و یا حتی هتل محل اقامتتان و... را فراهم کرده است.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3 border bg-body-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                            در زمان اجاره خودرو، ارائه چه مدارکی لازم است؟
+                        </button>
+                    </h2>
+                    <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                شرکت اجاره خودرو ناواران خدمات اجاره ماشین بدون راننده را بدون نیاز به ارائه چک، سند،
+                                سفته و یا هر وثیقه دیگری ارائه می دهد. همچنین در زمان دریافت خودرو، حتی لازم به ارائه
+                                اصل مدارک شناسایی نمی باشد و تنها کافیست تصویر گواهینامه و کارت ملی خود را برای تیم
+                                پشتیبانی ناواران ارسال کنید و در زمان دریافت خودرو اصل مدارک را برای بررسی به نماینده
+                                شرکت ناواران، نشان دهید. همین
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-3 border bg-body-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTeen" aria-expanded="false" aria-controls="collapseTeen">
+                            آیا امکان دریافت پشتیبانی در زمان اجاره خودرو وجود دارد؟
+                        </button>
+                    </h2>
+                    <div id="collapseTeen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                بله. تیم پشتیبانی ناواران، در هر 7 روز هفته، به صور 24 ساعته آماده پاسخگویی و ارائه
+                                خدمات به شما می باشند. شما می توانید از طریق شماره تماس های ۰۲۱-۴۴۶۶۶۲۹۴ - ۰۲۱-۴۴۶۶۸۹۶۱،
+                                واتس اپ و... با تیم پشتیبانی ناواران در تماس باشید
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Question box -->
+
+
+
+    <!-- Start review section -->
+    <section class="review" id="review">
+        <div class="container">
+            <div class="row">
+                <div class="title-Counter col-12 text-center">
+                    <div class="title">
+                        <h3><i class="fa-solid fa-comment" style="color: #FFD43B;"></i><span> نظرات کاربران </span></h3>
+                        <div class="linne text-center"></div>
+                        <p class="position-l">
+                            ناواران با شعار "اولین اجاره خودروی ایرانی به سبک جهانی" با رویکرد اعتماد به مشتری می باشد.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="swiper">
+                    <ul class="swiper-wrapper">
+
+                        <li class="swiper-slide">
+                            <div class="">
+                                <div class="review">
+                                    <div class="review-head p-4 bg-white theme-shadow">
+                                        <div class="text-warning text-start">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="review">
+                                            Lorem, Quam ad suscipit nostrum
+                                            aperiam voluptate nam repellat modi nesciunt cum ab, dolores sunt quaerat
+                                            iure vel,
+                                            cupiditate ullam impedit cumque eveniet?
+                                        </p>
+                                    </div>
+                                    <div class="review-person d-flex align-items-center mt-4">
+                                        <img src="./assets/image/person/person-1.jpg" alt="">
+                                        <div class="informaition ms-3">
+                                            <h5>Mohammad Ahmadi</h5>
+                                            <small>2 روز پیش</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="">
+                                <div class="review">
+                                    <div class="review-head p-4 bg-white theme-shadow">
+                                        <div class="text-warning text-start">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="review">
+                                            Lorem, Quam ad suscipit nostrum
+                                            aperiam voluptate nam repellat modi nesciunt cum ab, dolores sunt quaerat
+                                            iure vel,
+                                            cupiditate ullam impedit cumque eveniet?
+                                        </p>
+                                    </div>
+                                    <div class="review-person d-flex align-items-center mt-4">
+                                        <img src="./assets/image/person/person-2.jpg" alt="">
+                                        <div class="informaition ms-3">
+                                            <h5>Sara Mosavi</h5>
+                                            <small>1 هفته پیش </small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="">
+                                <div class="review">
+                                    <div class="review-head p-4 bg-white theme-shadow">
+                                        <div class="text-warning text-start">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="review">
+                                            Lorem, Quam ad suscipit nostrum
+                                            aperiam voluptate nam repellat modi nesciunt cum ab, dolores sunt quaerat
+                                            iure vel,
+                                            cupiditate ullam impedit cumque eveniet?
+                                        </p>
+                                    </div>
+                                    <div class="review-person d-flex align-items-center mt-4">
+                                        <img src="./assets/image/person/person-3.jpg" alt="">
+                                        <div class="informaition ms-3">
+                                            <h5>Maryam Salehi</h5>
+                                            <small>3 روز پیش</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="">
+                                <div class="review">
+                                    <div class="review-head p-4 bg-white theme-shadow">
+                                        <div class="text-warning text-start">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="review">
+                                            Lorem, Quam ad suscipit nostrum
+                                            aperiam voluptate nam repellat modi nesciunt cum ab, dolores sunt quaerat
+                                            iure vel,
+                                            cupiditate ullam impedit cumque eveniet?
+                                        </p>
+                                    </div>
+                                    <div class="review-person d-flex align-items-center mt-4">
+                                        <img src="./assets/image/person/person-4.jpg" alt="">
+                                        <div class="informaition ms-3">
+                                            <h5>Reza Mansori</h5>
+                                            <small>2 هفته پیش</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="">
+                                <div class="review">
+                                    <div class="review-head p-4 bg-white theme-shadow">
+                                        <div class="text-warning text-start">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="review">
+                                            Lorem, Quam ad suscipit nostrum
+                                            aperiam voluptate nam repellat modi nesciunt cum ab, dolores sunt quaerat
+                                            iure vel,
+                                            cupiditate ullam impedit cumque eveniet?
+                                        </p>
+                                    </div>
+                                    <div class="review-person d-flex align-items-center mt-4">
+                                        <img src="./assets/image/person/person-5.jpg" alt="">
+                                        <div class="informaition ms-3">
+                                            <h5>Sina Moradi</h5>
+                                            <small>2 هفته پیش</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="swiper-slide">
+                            <div class="">
+                                <div class="review">
+                                    <div class="review-head p-4 bg-white theme-shadow">
+                                        <div class="text-warning text-start">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p class="review">
+                                            Lorem, Quam ad suscipit nostrum
+                                            aperiam voluptate nam repellat modi nesciunt cum ab, dolores sunt quaerat
+                                            iure vel,
+                                            cupiditate ullam impedit cumque eveniet?
+                                        </p>
+                                    </div>
+                                    <div class="review-person d-flex align-items-center mt-4">
+                                        <img src="./assets/image/person/person-6.webp" alt="">
+                                        <div class="informaition ms-3">
+                                            <h5>Fatemeh Sadeqi</h5>
+                                            <small>3 هفته پیش</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of review section -->
+
+
+    <!-- Start Foother -->
+    <footer class="footer bg-dark">
+        <div class="foother-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#"><img src="./assets/image/logo/navaran-logo.webp" alt=""></a>
+                        <!-- <div class="line-foother"></div> -->
+                        <p class="foother-top">
+                            ناواران با شعار "اولین اجاره خودروی ایرانی به سبک جهانی" با رویکرد اعتماد به مشتری می باشد.
+                        </p>
+                        <div class="contact">
+                            <a href="#">
+                                <i class="fa-brands fa-facebook dark:text-secondaryColor text-2xl"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter dark:text-secondaryColor text-2xl pr-2"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram dark:text-secondaryColor text-2xl "></i>
+                            </a>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin dark:text-secondaryColor text-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="service col-lg-3 col-sm-6">
+                        <h5><i class="fa-solid fa-gear"></i><span>خدمات ما : </span></h5>
+                        <div class="line-foother"></div>
+                        <ul>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    <span>ارائه فاکتور رسمی</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    <span> رزرو رایگان با امتیازات </span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    <span>
+                                        ارائه ماشین های تمیز و نو
+                                    </span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-paperclip"></i>
+                                    <span>
+                                        امداد رسانی در کمترین زمان
+                                    </span>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="rent col-lg-3 col-sm-6">
+                        <h5><i class="fa-solid fa-car-rear"></i><span>اجاره خودرو : </span></h5>
+                        <div class="line-foother"></div>
+                        <ul>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-car-rear"></i><span>اجاره خودرو در تهران</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-car-rear"></i><span>اجاره خودرو در اصفهان</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-car-rear"></i><span>اجاره خودرو در مشهد</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <i class="fa-solid fa-car-rear"></i><span>اجاره خودرو در قم</span>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="contact-us col-lg-3 col-sm-6">
+                        <h5>راه های ارتباطی با ما : </h5>
+                        <div class="line-foother"></div>
+                        <ul>
+                            <li><a href="#"><i class="fa-solid fa-location-dot" style="color: #FFD43B;"></i><span
+                                        class="text-white"> قم بلوار امین پلاک 60</span></a></li>
+                            <li><a href="#"><i class="fa-solid fa-envelope" style="color: #FFD43B;"></i><span
+                                        class="text-white">navaran@gmail.com</span></a></li>
+                            <li><a href="#"><i class="fa-solid fa-comment" style="color: #FFD43B;"></i></i><span
+                                        class="text-white">30000147</span></a></li>
+                            <li><a href="#"><i class="fa-solid fa-fax" style="color: #FFD43B;"></i><span
+                                        class="text-white">00906800915</span></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="foother-bottom">
+            <div class="container">
+                <div class=" d-flex row justify-content-between">
+                    <div class="col-6">
+                        <p>Disined by Mahdi Zahedi</p>
+                    </div>
+                    <div class="col-6">
+                        <p><a href="#">www.navaran.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End of foother -->
+
+
+
+    <!-- Start script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 50,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            grabCursor: true,
+            breakpoints: {
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 1,
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                },
+                // when window width is >= 1024px
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./assets/js/main.js"></script>
+    <!-- End of script -->
+
+</body>
+
+</html>

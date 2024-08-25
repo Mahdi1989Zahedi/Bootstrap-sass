@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navaran</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/import.css">
+
+</head>
+
+<body class="htmlPage" id="htmlPage">
+
+  <!-- start header -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="direction: rtl;">
+      <div class="container">
+        <div class="logo d-md-none d-none  d-lg-inline">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/image/logo/navaran-logo.webp" alt="">
+          </a>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <div class="btn-dark-mode">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <span class="ball"></span>
+            </label>
+          </div>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html"><i
+                  class="fa-solid fa-house"><span>صفحه
+                    اصلی</span></i></a>
+            </li>
+            <li class="nav-item dropdown" style="direction: rtl; text-align: justify;">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-car"></i><span>محصولات</span></a>
+              </a>
+              <ul class="dropdown-menu" style="direction: rtl;">
+                <li class="text-end"><a class="dropdown-item" href="./rent.html"> اجاره
+                    خودرو خارجی</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="text-end"><a class="dropdown-item" href="./iran.html"> اجاره
+                    خودرو ایرانی</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li class="text-end"><a class="dropdown-item" href="./prodouct.html">خرید
+                    خودرو</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./contact.html"><i
+                  class="fa-solid fa-phone"></i><span>تماس با ما</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html"><i
+                  class="fa-solid fa-comment"></i><span>نظرات</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./news.html"><i
+                  class="fa-solid fa-paperclip"></i><span>اخبار</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <a class="navbar-brand enter nav-link" href="#" data-bs-toggle="modal" data-bs-target="#regester"><span>ورود /
+            ثبت نام</span><i class="fa-solid fa-right-to-bracket"></i></a>
+      </div>
+    </nav>
+  </header>
+  <!-- End of header -->
+
+  <!-- regester-form-modal -->
+  <div class="modal" tabindex="-1" id="regester" style="direction: rtl; background-color: rgb(82, 82, 82);">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-warning">فرم ثبت نام ناوران</h5>
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="name" placeholder="name">
+              <label for="floatingInput" style="direction: rtl; margin-left: 400px;"><i
+                  class="fa-solid fa-user text-secondary"></i> نام : </label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput" style="direction: rtl; margin-left: 340px;"><i
+                  class="fa-solid fa-envelope text-secondary"></i> آدرس ایمیل : </label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control " id="floatingPassword" placeholder="Password">
+              <label for="floatingPassword" style="margin-left: 365px;"><i class="fa-solid fa-lock text-secondary"></i>
+                رمز ورود : </label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control " id="number" placeholder="number">
+              <label for="floatingPassword" style="margin-left: 385px;"><i class="fa-solid fa-phone text-secondary"></i>
+                تلفن : </label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control " id="city" placeholder="city">
+              <label for="floatingPassword" style="margin-left: 390px;"><i
+                  class="fa-solid fa-location-dot text-secondary"></i> شهر : </label>
+            </div>
+            <input type="submit" class="btn btn-primary btn-lg" value="ارسال" style="display: block; width: 100%;">
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-warning" data-bs-dismiss="modal">انصراف</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End regester-form-modal -->
+
+
+  <!-- header -->
+  <figure class="head text-center pt-4 mt-5">
+    <blockquote class="head blockquote">
+      <p class="head "> اجاره خودرو در شهر های ایران</p>
+    </blockquote>
+    <figcaption class="blockquote-footer">
+      <!-- Someone famous in <cite title="Source Title">Source Title</cite> -->
+    </figcaption>
+  </figure>
+  <!-- header -->
+
+
+  <!-- card-car -->
+  <div class="container">
+    <div class="row">
+      <div class="car col-md-12">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <figure class="figure">
+                <img src="./assets/images/rent-img/rent-1.webp" class="figure-img img-fluid rounded" alt="..."
+                  style="margin-right: 50px; padding-top: 150px;">
+                <figcaption class="figure-caption"><img src="./assets/images/logo/navaran-logo.webp" alt=""
+                    style="margin-right: 120px;"></figcaption>
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title pt-4 pb-3">تویوتا پرادو</h4>
+
+                <p>
+                  <i class="fa-solid fa-person py-2"></i> 7 نفر
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-suitcase-rolling"></i> 3 چمدان بزرگ یا 4 چمدان کوچک
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> وضعیت خودرو : در حد نو
+                </p>
+
+                <p style="color: #7c6306;">
+                  <i class="fa-solid fa-road"></i> بدون محدودیت پیمایش
+                </p>
+
+                <div class="dropdown my-2" style="direction: rtl;">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    انتخاب شهر
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">تهران</a></li>
+                    <li><a class="dropdown-item" href="#">مشهد</a></li>
+                    <li><a class="dropdown-item" href="#">شیراز</a></li>
+                    <li><a class="dropdown-item" href="#">اصفهان</a></li>
+                  </ul>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-sm">بدون محدودیت</button>
+                <button type="button" class="btn btn-danger btn-sm">با محدودیت</button>
+
+                <p class="card-text pt-4 text-success">در صورت رزرو ماهانه خودرو قیمت روزانه 2.000.000 ریال کاهش می یابد
+                  .</p>
+
+                <p><span>قیمت روزانه : </span> <span>.................................................</span>
+                  <span>12.000.000 ریال</span>
+                </p>
+                <p><span>جمع پرداختی (با مالیات) : </span><span>................................</span><span>15.000.000
+                    ریال</span></p>
+                <p><span>عودت به رانندگان خوب : </span><span>...................................</span><span>3.000.000
+                    ریال</span></p>
+
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" type="button">درخواست رزرو</button>
+                  <button class="btn btn-danger" type="button">لغو کردن رزرو</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="car col-md-12">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <figure class="figure">
+                <img src="./assets/images/rent-img/rent-2.webp" class="figure-img img-fluid rounded" alt="..."
+                  style="margin-right: 50px; padding-top: 150px;">
+                <figcaption class="figure-caption"><img src="./assets/images/logo/navaran-logo.webp" alt=""
+                    style="margin-right: 120px;"></figcaption>
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title pt-4 pb-3">کیا سورنتو</h4>
+
+                <p>
+                  <i class="fa-solid fa-person py-2"></i> 7 نفر
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-suitcase-rolling"></i> 3 چمدان بزرگ یا 4 چمدان کوچک
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> وضعیت خودرو : در حد نو
+                </p>
+
+                <p style="color: #7c6306;">
+                  <i class="fa-solid fa-road"></i> بدون محدودیت پیمایش
+                </p>
+
+                <div class="dropdown my-2" style="direction: rtl;">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    انتخاب شهر
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">تهران</a></li>
+                    <li><a class="dropdown-item" href="#">مشهد</a></li>
+                    <li><a class="dropdown-item" href="#">شیراز</a></li>
+                    <li><a class="dropdown-item" href="#">اصفهان</a></li>
+                  </ul>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-sm">بدون محدودیت</button>
+                <button type="button" class="btn btn-danger btn-sm">با محدودیت</button>
+
+                <p class="card-text pt-4 text-success">در صورت رزرو ماهانه خودرو قیمت روزانه 2.000.000 ریال کاهش می یابد
+                  .</p>
+
+                <p><span>قیمت روزانه : </span> <span>.................................................</span>
+                  <span>12.000.000 ریال</span>
+                </p>
+                <p><span>جمع پرداختی (با مالیات) : </span><span>................................</span><span>15.000.000
+                    ریال</span></p>
+                <p><span>عودت به رانندگان خوب : </span><span>...................................</span><span>3.000.000
+                    ریال</span></p>
+
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" type="button">درخواست رزرو</button>
+                  <button class="btn btn-danger" type="button">لغو کردن رزرو</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="car col-md-12">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <figure class="figure">
+                <img src="./assets/images/rent-img/rent-3.webp" class="figure-img img-fluid rounded" alt="..."
+                  style="margin-right: 50px; padding-top: 150px;">
+                <figcaption class="figure-caption"><img src="./assets/images/logo/navaran-logo.webp" alt=""
+                    style="margin-right: 120px;"></figcaption>
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title pt-4 pb-3">تیگو 8 پرو مکس</h4>
+
+                <p>
+                  <i class="fa-solid fa-person py-2"></i> 7 نفر
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-suitcase-rolling"></i> 3 چمدان بزرگ یا 4 چمدان کوچک
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> وضعیت خودرو : در حد نو
+                </p>
+
+                <p style="color: #7c6306;">
+                  <i class="fa-solid fa-road"></i> بدون محدودیت پیمایش
+                </p>
+
+                <div class="dropdown my-2" style="direction: rtl;">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    انتخاب شهر
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">تهران</a></li>
+                    <li><a class="dropdown-item" href="#">مشهد</a></li>
+                    <li><a class="dropdown-item" href="#">شیراز</a></li>
+                    <li><a class="dropdown-item" href="#">اصفهان</a></li>
+                  </ul>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-sm">بدون محدودیت</button>
+                <button type="button" class="btn btn-danger btn-sm">با محدودیت</button>
+
+                <p class="card-text pt-4 text-success">در صورت رزرو ماهانه خودرو قیمت روزانه 2.000.000 ریال کاهش می یابد
+                  .</p>
+
+                <p><span>قیمت روزانه : </span> <span>.................................................</span>
+                  <span>12.000.000 ریال</span>
+                </p>
+                <p><span>جمع پرداختی (با مالیات) : </span><span>................................</span><span>15.000.000
+                    ریال</span></p>
+                <p><span>عودت به رانندگان خوب : </span><span>...................................</span><span>3.000.000
+                    ریال</span></p>
+
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" type="button">درخواست رزرو</button>
+                  <button class="btn btn-danger" type="button">لغو کردن رزرو</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="car col-md-12">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <figure class="figure">
+                <img src="./assets/images/rent-img/rent-6.webp" class="figure-img img-fluid rounded w-[100%]" alt="..."
+                  style="margin-right: 50px; padding-top: 150px;">
+                <figcaption class="figure-caption"><img src="./assets/images/logo/navaran-logo.webp" alt=""
+                    style="margin-right: 120px;"></figcaption>
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title pt-4 pb-3">کیا سراتو آپشنال</h4>
+
+                <p>
+                  <i class="fa-solid fa-person py-2"></i> 7 نفر
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-suitcase-rolling"></i> 3 چمدان بزرگ یا 4 چمدان کوچک
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> وضعیت خودرو : در حد نو
+                </p>
+
+                <p style="color: #7c6306;">
+                  <i class="fa-solid fa-road"></i> بدون محدودیت پیمایش
+                </p>
+
+                <div class="dropdown my-2" style="direction: rtl;">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    انتخاب شهر
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">تهران</a></li>
+                    <li><a class="dropdown-item" href="#">مشهد</a></li>
+                    <li><a class="dropdown-item" href="#">شیراز</a></li>
+                    <li><a class="dropdown-item" href="#">اصفهان</a></li>
+                  </ul>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-sm">بدون محدودیت</button>
+                <button type="button" class="btn btn-danger btn-sm">با محدودیت</button>
+
+                <p class="card-text pt-4 text-success">در صورت رزرو ماهانه خودرو قیمت روزانه 2.000.000 ریال کاهش می یابد
+                  .</p>
+
+                <p><span>قیمت روزانه : </span> <span>.................................................</span>
+                  <span>12.000.000 ریال</span>
+                </p>
+                <p><span>جمع پرداختی (با مالیات) : </span><span>................................</span><span>15.000.000
+                    ریال</span></p>
+                <p><span>عودت به رانندگان خوب : </span><span>...................................</span><span>3.000.000
+                    ریال</span></p>
+
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" type="button">درخواست رزرو</button>
+                  <button class="btn btn-danger" type="button">لغو کردن رزرو</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="car col-md-12">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <figure class="figure">
+                <img src="./assets/images/rent-img/rent-4.webp" class="figure-img img-fluid rounded" alt="..."
+                  style="margin-right: 50px; padding-top: 150px;">
+                <figcaption class="figure-caption"><img src="./assets/images/logo/navaran-logo.webp" alt=""
+                    style="margin-right: 120px;"></figcaption>
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title pt-4 pb-3">ساندرو اتومات</h4>
+
+                <p>
+                  <i class="fa-solid fa-person py-2"></i> 5 نفر
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-suitcase-rolling"></i> 3 چمدان بزرگ یا 4 چمدان کوچک
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> وضعیت خودرو : در حد نو
+                </p>
+
+                <p style="color: #7c6306;">
+                  <i class="fa-solid fa-road"></i> بدون محدودیت پیمایش
+                </p>
+
+                <div class="dropdown my-2" style="direction: rtl;">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    انتخاب شهر
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">تهران</a></li>
+                    <li><a class="dropdown-item" href="#">مشهد</a></li>
+                    <li><a class="dropdown-item" href="#">شیراز</a></li>
+                    <li><a class="dropdown-item" href="#">اصفهان</a></li>
+                  </ul>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-sm">بدون محدودیت</button>
+                <button type="button" class="btn btn-danger btn-sm">با محدودیت</button>
+
+                <p class="card-text pt-4 text-success">در صورت رزرو ماهانه خودرو قیمت روزانه 2.000.000 ریال کاهش می یابد
+                  .</p>
+
+                <p><span>قیمت روزانه : </span> <span>.................................................</span>
+                  <span>12.000.000 ریال</span>
+                </p>
+                <p><span>جمع پرداختی (با مالیات) : </span><span>................................</span><span>15.000.000
+                    ریال</span></p>
+                <p><span>عودت به رانندگان خوب : </span><span>...................................</span><span>3.000.000
+                    ریال</span></p>
+
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" type="button">درخواست رزرو</button>
+                  <button class="btn btn-danger" type="button">لغو کردن رزرو</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="car col-md-12">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <figure class="figure">
+                <img src="./assets/images/rent-img/car-1.png" class="figure-img img-fluid rounded" alt="..."
+                  style="margin-right: 50px; padding-top: 150px;">
+                <figcaption class="figure-caption"><img src="./assets/images/logo/navaran-logo.webp" alt=""
+                    style="margin-right: 120px;"></figcaption>
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title pt-4 pb-3">تویوتا پرادو</h4>
+
+                <p>
+                  <i class="fa-solid fa-person py-2"></i> 7 نفر
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-suitcase-rolling"></i> 3 چمدان بزرگ یا 4 چمدان کوچک
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> وضعیت خودرو : در حد نو
+                </p>
+
+                <p style="color: #7c6306;">
+                  <i class="fa-solid fa-road"></i> بدون محدودیت پیمایش
+                </p>
+
+                <div class="dropdown my-2" style="direction: rtl;">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    انتخاب شهر
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">تهران</a></li>
+                    <li><a class="dropdown-item" href="#">مشهد</a></li>
+                    <li><a class="dropdown-item" href="#">شیراز</a></li>
+                    <li><a class="dropdown-item" href="#">اصفهان</a></li>
+                  </ul>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-sm">بدون محدودیت</button>
+                <button type="button" class="btn btn-danger btn-sm">با محدودیت</button>
+
+                <p class="card-text pt-4 text-success">در صورت رزرو ماهانه خودرو قیمت روزانه 2.000.000 ریال کاهش می یابد
+                  .</p>
+
+                <p><span>قیمت روزانه : </span> <span>.................................................</span>
+                  <span>12.000.000 ریال</span>
+                </p>
+                <p><span>جمع پرداختی (با مالیات) : </span><span>................................</span><span>15.000.000
+                    ریال</span></p>
+                <p><span>عودت به رانندگان خوب : </span><span>...................................</span><span>3.000.000
+                    ریال</span></p>
+
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" type="button">درخواست رزرو</button>
+                  <button class="btn btn-danger" type="button">لغو کردن رزرو</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="car col-md-12">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <figure class="figure">
+                <img src="./assets/images/rent-img/car-9.png" class="figure-img img-fluid rounded" alt="..."
+                  style="margin-right: 30px; padding-top: 150px; ">
+                <figcaption class="figure-caption"><img src="./assets/images/logo/navaran-logo.webp" alt=""
+                    style="margin-right: 120px;"></figcaption>
+              </figure>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title pt-4 pb-3">تویوتا پرادو</h4>
+
+                <p>
+                  <i class="fa-solid fa-person py-2"></i> 7 نفر
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-suitcase-rolling"></i> 3 چمدان بزرگ یا 4 چمدان کوچک
+                </p>
+
+                <p>
+                  <i class="fa-solid fa-circle-check"></i> وضعیت خودرو : در حد نو
+                </p>
+
+                <p style="color: #7c6306;">
+                  <i class="fa-solid fa-road"></i> بدون محدودیت پیمایش
+                </p>
+
+                <div class="dropdown my-2" style="direction: rtl;">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    انتخاب شهر
+                  </a>
+
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">تهران</a></li>
+                    <li><a class="dropdown-item" href="#">مشهد</a></li>
+                    <li><a class="dropdown-item" href="#">شیراز</a></li>
+                    <li><a class="dropdown-item" href="#">اصفهان</a></li>
+                  </ul>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-sm">بدون محدودیت</button>
+                <button type="button" class="btn btn-danger btn-sm">با محدودیت</button>
+
+                <p class="card-text pt-4 text-success">در صورت رزرو ماهانه خودرو قیمت روزانه 2.000.000 ریال کاهش می یابد
+                  .</p>
+
+                <p><span>قیمت روزانه : </span> <span>.................................................</span>
+                  <span>12.000.000 ریال</span>
+                </p>
+                <p><span>جمع پرداختی (با مالیات) : </span><span>................................</span><span>15.000.000
+                    ریال</span></p>
+                <p><span>عودت به رانندگان خوب : </span><span>...................................</span><span>3.000.000
+                    ریال</span></p>
+
+                <div class="d-grid gap-2">
+                  <button class="btn btn-primary" type="button">درخواست رزرو</button>
+                  <button class="btn btn-danger" type="button">لغو کردن رزرو</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!--  -->
+
+  <!-- start box city -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="card border-success">
+            <div class="card-body">
+              <img src="./assets/images/city/tehran.webp" alt=""
+                style="width: inherit; margin: 15px auto; display: block;">
+              <a href="#" class="btn btn-success" style="display: block;" data-bs-toggle="modal"
+                data-bs-target="#modal-1">اجاره خودرو در تهران</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="card border-danger">
+            <div class="card-body">
+              <img src="./assets/images/city/mashhad.webp" alt=""
+                style="width: inherit; margin: 15px auto; display: block;">
+              <a href="#" class="btn btn-danger" style="display: block;" data-bs-toggle="modal"
+                data-bs-target="#modal-2">اجاره خودرو در مشهد</a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="card border-primary">
+            <div class="card-body">
+              <img src="./assets/images/city/esfehan.webp" alt=""
+                style="width: inherit; margin: 15px auto; display: block;">
+              <a href="#" class="btn btn-primary" style="display: block;" data-bs-toggle="modal"
+                data-bs-target="#modal-3">اجاره خودرو در اصفهان</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+          <div class="card border-warning">
+            <div class="card-body">
+              <img src="./assets/images/city/shiraz.webp" alt=""
+                style="width: inherit; margin: 15px auto; display: block;">
+              <a href="#" class="btn btn-warning" style="display: block;" data-bs-toggle="modal"
+                data-bs-target="#modal-4">اجاره خودرو در شیراز</a>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- End box city -->
+
+
+  <!-- about us -->
+  <section class="py-5 bg-light" style="direction: rtl;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pb-5">
+          <h2 class="text-success"> <span><i class="fa-solid fa-car-rear"> اجاره خودرو بدون راننده </i></span></h2>
+          <p style="text-align: justify ;">اجاره خودرو بدون راننده یکی از پر طرفدارترین خدمات ناواران است که با شرایط
+            آسان و تخفیف های ویژه برای مشتریانش فراهم نموده است. با اجاره ماشین بدون راننده شما دیگر نیازی به پرداخت
+            هزینه های نگهداری، تعمیرات، تعویض لاستیک و بیمه خودرو نخواهید داشت. ناواران با بزرگ ترین ناوگان خودرو در
+            ایران، اجاره ماشین لوکس و اجاره ماشین ارزان را بدون دریافت چک یا سند امکان پذیر نموده است. قیمت اجاره ماشین
+            در خودرو های بدون راننده با افزایش تعداد روزهای رزرو کاهش پیدا خواهدکرد. همچنین تمام خودرو ها تحت مالکیت
+            شرکت ناواران میباشد و داری بیمه هستند.</p>
+        </div>
+
+
+        <div class="col-12 pb-5">
+          <h2 class="text-success"> <span><i class="fa-solid fa-city"></i> اجاره خودرو در تهران</i></span></h2>
+          <p style="text-align: justify ;">اجاره خودرو بدون راننده یکی از پر طرفدارترین خدمات ناواران است که با شرایط
+            آسان و تخفیف های ویژه برای مشتریانش فراهم نموده است. با اجاره ماشین بدون راننده شما دیگر نیازی به پرداخت
+            هزینه های نگهداری، تعمیرات، تعویض لاستیک و بیمه خودرو نخواهید داشت. ناواران با بزرگ ترین ناوگان خودرو در
+            ایران، اجاره ماشین لوکس و اجاره ماشین ارزان را بدون دریافت چک یا سند امکان پذیر نموده است. قیمت اجاره ماشین
+            در خودرو های بدون راننده با افزایش تعداد روزهای رزرو کاهش پیدا خواهدکرد. همچنین تمام خودرو ها تحت مالکیت
+            شرکت ناواران میباشد و داری بیمه هستند.</p>
+        </div>
+        <!-- End of about us -->
+
+        <!-- محصولات -->
+        <h2 class="text-success pb-3"> <span><i class="fa-solid fa-car-on"></i> اجاره ماشین های لوکس و
+            اقتصادی</i></span></h2>
+
+
+        <div class="col-12 col-md-3" style="padding: 0;">
+          <div class="car-item-header text-center">
+            <h6 class="bold">اجاره اکسنت</h6>
+            <p class="car text-center">خودرو سدان نیمه لوکس</p>
+            <a href="" target="_blank" class="text-success">اطلاعات بیشتر</a>
+          </div>
+          <div style="display: flex;align-items: end; height: 11rem; padding: 0;">
+            <div class="car-item-box align-items-center mx-auto"
+              style="background: #ccc; height: 40px; width: 100%; position: relative;">
+              <img src="./assets/images/logo/car-1.webp" alt=""
+                style="position: absolute; right: 0; left: 0; bottom: 5px; margin: auto;">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3" style="padding: 0;">
+          <div class="car-item-header text-center">
+            <h6 class="bold" style="margin-right: 30px;">اجاره سراتو</h6>
+            <p class="car text-center">خودرو سدان نیمه لوکس</p>
+            <a href="" target="_blank" class="text-success">اطلاعات بیشتر</a>
+          </div>
+          <div style="display: flex;align-items: end; height: 11rem; padding: 0;">
+            <div class="car-item-box mx-auto" style="background: #ccc; height: 40px; width: 100%; position: relative;">
+              <img src="./assets/images/logo/car-2.webp" alt=""
+                style="position: absolute; right: 0; left: 0; bottom: 5px; margin: auto;">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3" style="padding: 0;">
+          <div class="car-item-header text-center">
+            <h6 class="bold">اجاره سورنتو</h6>
+            <p class="car text-center">خودرو شاسی بلند لوکس</p>
+            <a href="" target="_blank" class="text-success">اطلاعات بیشتر</a>
+          </div>
+          <div style="display: flex;align-items: end; height: 11rem; padding: 0;">
+            <div class="car-item-box mx-auto" style="background: #ccc; height: 40px; width: 100%; position: relative;">
+              <img src="./assets/images/logo/car-3.webp" alt=""
+                style="position: absolute; right: 0; left: 0; bottom: 5px; margin: auto;">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-3" style="padding: 0;">
+          <div class="car-item-header text-center">
+            <h6 class="bold">اجاره تیگو 8 پرومکس</h6>
+            <p class="car text-center">خودرو شاسی بلند لوکس</p>
+            <a href="" target="_blank" class="text-success">اطلاعات بیشتر</a>
+          </div>
+          <div style="display: flex;align-items: end; height: 11rem; padding: 0;">
+            <div class="car-item-box mx-auto" style="background: #ccc; height: 40px; width: 100%; position: relative;">
+              <img src="./assets/images/logo/car-4.webp" alt=""
+                style="position: absolute; right: 0; left: 0; bottom: 5px; margin: auto;">
+            </div>
+          </div>
+        </div>
+        <!-- پایان محصولات -->
+
+        <!-- start about us -->
+        <div class="col-12 py-5">
+          <h2 class="text-success"> <span><i class="fa-solid fa-gear"></i> پشتیبانی شبانه روزی خودرو ها</i></span></h2>
+          <p style="text-align: justify ;">درکنار خدمت ویژه ناواران، در زمان اجاره خودرو، تیم پشتیبانی ناواران با خدمات
+            پشتیبانی شبانه روزی و رصد های ماهواره ای همراه شما خواهد بود درصورت بروز هرگونه مشکل احتمالی نظیر نقص فنی و
+            تصادفات احتمالی در کوتاه ترین زمان ممکن و در هر نقطه از ایران امدادرسانی انجام خواهد شد. همچنین در صورت لزوم
+            خودرویی دیگر در اختیار شما قرار خواهیم داد.
+            تیم پشتیبانی شرکت ناواران، در هر ساعت شبانه روز آماده پاسخگویی به شما خواهد بود. شما می توانید از راه های
+            مختلفی نظیر تماس مستقیم با شماره های ۰۲۱-۴۴۶۶۶۲۹۴ - ۰۲۱-۴۴۶۶۸۹۶۱، از طریق واتس آپ و یا دیگر راه های ارتباطی
+            با تیم پشتیبانی در ارتباط باشید یا مدت زمان اجاره خودرو خود را تمدید کنید.</p>
+        </div>
+
+
+        <div class="col-12 pb-5">
+          <h2 class="text-success"> <span> <i class="fa-solid fa-money-bill"></i> قیمت اجاره خودرو بدون
+              راننده</i></span></h2>
+          <p style="text-align: justify;">هنگام اجاره خودرو بدون راننده، قیمت اجاره ماشین مهم ترین نکته می باشد. تمام
+            خودرو های شرکت ناواران، تحت مالکیت رسمی این شرکت بوده و تحویل خودرو بدون واسطه صورت می پذیرد، عدم وجود واسطه
+            سبب ارائه مناسب ترین لیست قیمت و کیفیت در اجاره خودرو می گردد، همچنین باعث می شود تا بدون محدودیت زمانی
+            خودرو مورد نظرتان را از یک تا هر تعداد بازه زمانی که می خواهید اجاره کنید.
+            دیگر ویژگی شرکت کرایه خودرو ناواران، ارائه قرارداد و فاکتور رسمی به شرکت ها و اشخاص در کنار امکان اجاره
+            خودرو با تخفیف و امتیاز ویژه باشگاه مسافران می باشد. رویکرد و خدمات مشتری محور ناواران، سبب تضمین ارائه
+            مناسب ترین قیمت کرایه ماشین، برای متقاضیان خدمات اجاره خودرو در ایران شده است.</p>
+
+
+
+          <div class="col-12 py-5">
+            <h2 class="text-success"> <span> <i class="fa-solid fa-shield-halved"></i>پوشش طلایی ناواران برای کاهش تعهد
+                خسارات مشتری</i></span></h2>
+            <p style="text-align: justify;">هنگام اجاره خودرو بدون راننده، قیمت اجاره ماشین مهم ترین نکته می باشد. تمام
+              خودرو های شرکت ناواران، تحت مالکیت رسمی این شرکت بوده و تحویل خودرو بدون واسطه صورت می پذیرد، عدم وجود
+              واسطه سبب ارائه مناسب ترین لیست قیمت و کیفیت در اجاره خودرو می گردد، همچنین باعث می شود تا بدون محدودیت
+              زمانی خودرو مورد نظرتان را از یک تا هر تعداد بازه زمانی که می خواهید اجاره کنید. دیگر ویژگی شرکت کرایه
+              خودرو ناواران، ارائه قرارداد و فاکتور رسمی به شرکت ها و اشخاص در کنار امکان اجاره خودرو با تخفیف و امتیاز
+              ویژه باشگاه مسافران می باشد. رویکرد و خدمات مشتری محور ناواران، سبب تضمین ارائه مناسب ترین قیمت کرایه
+              ماشین، برای متقاضیان خدمات اجاره خودرو در ایران شده است.</p>
+
+          </div>
+        </div>
+  </section>
+  <!-- End of about us -->
+
+
+  <!-- Start Foother -->
+  <footer class="bg-dark" id="foother">
+    <div class="foother-top">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-3 col-sm-6">
+            <a href="#"><img src="./assets/images/logo/navaran-logo.webp" alt=""></a>
+            <!-- <div class="line-foother"></div> -->
+            <p class="foother-top">
+              ناواران با شعار "اولین اجاره خودروی ایرانی به سبک جهانی" با رویکرد اعتماد به مشتری می باشد.
+            </p>
+            <div class="contact">
+              <a href="#">
+                <i class="fa-brands fa-facebook dark:text-secondaryColor text-2xl"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-twitter dark:text-secondaryColor text-2xl pr-2"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram dark:text-secondaryColor text-2xl "></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-linkedin dark:text-secondaryColor text-2xl"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="service col-lg-3 col-sm-6">
+            <h5><i class="fa-solid fa-gear"></i><span>خدمات ما : </span></h5>
+            <div class="line-foother"></div>
+            <ul>
+              <li><a href="#">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <span>ارائه فاکتور رسمی</span>
+                </a></li>
+              <li><a href="#">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <span> رزرو رایگان با امتیازات </span>
+                </a></li>
+              <li><a href="#">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <span>
+                    ارائه ماشین های تمیز و نو
+                  </span>
+                </a></li>
+              <li><a href="#">
+                  <i class="fa-solid fa-paperclip"></i>
+                  <span>
+                    امداد رسانی در کمترین زمان
+                  </span>
+                </a></li>
+            </ul>
+          </div>
+
+          <div class="rent col-lg-3 col-sm-6">
+            <h5><i class="fa-solid fa-car-rear"></i><span>اجاره خودرو : </span></h5>
+            <div class="line-foother"></div>
+            <ul>
+              <li><a href="#">
+                  <i class="fa-solid fa-car-rear"></i><span>اجاره خودرو در تهران</span>
+                </a></li>
+              <li><a href="#">
+                  <i class="fa-solid fa-car-rear"></i><span>اجاره خودرو در اصفهان</span>
+                </a></li>
+              <li><a href="#">
+                  <i class="fa-solid fa-car-rear"></i><span>اجاره خودرو در مشهد</span>
+                </a></li>
+              <li><a href="#">
+                  <i class="fa-solid fa-car-rear"></i><span>اجاره خودرو در قم</span>
+                </a></li>
+            </ul>
+          </div>
+
+          <div class="contact-us col-lg-3 col-sm-6">
+            <h5>راه های ارتباطی با ما : </h5>
+            <div class="line-foother"></div>
+            <ul>
+              <li><a href="#"><i class="fa-solid fa-location-dot" style="color: #FFD43B;"></i><span class="text-white">
+                    قم بلوار امین پلاک 60</span></a></li>
+              <li><a href="#"><i class="fa-solid fa-envelope" style="color: #FFD43B;"></i><span
+                    class="text-white">navaran@gmail.com</span></a></li>
+              <li><a href="#"><i class="fa-solid fa-comment" style="color: #FFD43B;"></i></i><span
+                    class="text-white">30000147</span></a></li>
+              <li><a href="#"><i class="fa-solid fa-fax" style="color: #FFD43B;"></i><span
+                    class="text-white">00906800915</span></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="foother-bottom">
+      <div class="container">
+        <div class=" d-flex row justify-content-between">
+          <div class="col-6">
+            <p>Disined by Mahdi Zahedi</p>
+          </div>
+          <div class="col-6">
+            <p><a href="#">www.navaran.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End of foother -->
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/news.js"></script>
+
+
+</body>
+
+</html>

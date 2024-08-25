@@ -1,0 +1,345 @@
+// start about section style //
+section.about {
+    margin-top: 100px;
+
+    div.image {
+        img.about {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            text-align: center;
+            display: block;
+            margin-bottom: 20px;
+        }
+    }
+
+    div.about {
+        margin-bottom: 20px;
+
+        h2 {
+            font-weight: 500;
+        }
+
+        p.about {
+            text-align: justify;
+            margin: 15px auto;
+        }
+    }
+
+    div.card {
+        margin-top: 10px;
+
+        div.card-body {
+
+
+            img {
+                display: block;
+                width: 100px;
+                margin: 0 auto;
+            }
+        }
+    }
+
+
+}
+
+//// End of about section style ////
+
+
+
+
+//// start servise section style ////
+section.servise {
+    margin-top: 100px;
+
+    div.title {
+        h3 {
+            i {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    div.service {
+        margin-top: 20px;
+        margin-bottom: 100px;
+        box-shadow: var(--box-shadow);
+        border-radius: 8px;
+        padding: 20px;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        height: 300px;
+        background-color: rgb(149, 190, 190);
+
+        &::after {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: var(--color-btn-light);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transition: var(--transition);
+        }
+
+        &:hover::after {
+            width: 100%;
+            height: 100%;
+            background: var(--color-btn);
+            z-index: -1;
+        }
+
+        &:hover h5,
+        p,
+        img {
+            color: white;
+        }
+
+        h5 {
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #000000;
+        }
+
+
+
+        div.icon {
+            img.servise {
+                width: 100px;
+            }
+        }
+    }
+}
+
+// End of servise section style //
+
+
+
+
+// start section.Counter style //
+#Counter {
+    background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(38, 41, 218, 0.438)), url(../image/about/Counter-img.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+section.Counter {
+    margin-top: 100px;
+    width: 100%;
+    height: 700px;
+    position: absolute;
+
+    div.title-Counter {
+        width: 50%;
+        background-color: white;
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        box-shadow: var(--box-shadow);
+        position: relative;
+        bottom: 50px;
+        border-radius: 10px;
+    }
+
+    div.item-Counter {
+        padding-top: 150px;
+        font-weight: 600;
+        color: whitesmoke;
+        font-family: car-font;
+
+        h2 {
+            font-family: car-font;
+            direction: ltr;
+        }
+    }
+}
+
+// End of section.Counter style //
+
+
+
+
+// start sujest style //
+section.sujest {
+    margin-top: 1000px;
+    margin-bottom: 100px;
+
+    div.sujest-item {
+        transition: var(--transition);
+
+        div.image {
+            width: 100%;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        div.info-car {
+            font-family: car-font;
+            display: none;
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            h4 {
+                font-family: car-font;
+            }
+
+            h5.gheimat {
+                font-family: car-font;
+                background-color: orange;
+                width: 140px;
+                margin: 0 auto;
+                padding: 5px;
+                border-radius: 8px;
+            }
+            button.buy {
+                background-color: rgb(140, 218, 23);
+                width: 100px;
+                padding: 8px;
+                border-radius: 8px;
+                display: inline;
+                border: none;
+                font: bold;
+                font-weight: 400;
+            }
+
+            p {
+                font-family: car-font;
+            }
+
+        }
+
+        button.btn-hidden {
+            background-color: var(--color-btn);
+            padding: 8px 20px;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 8px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// End of sujest style //
+
+
+
+// start contact section style //
+section.contact {
+    width: 100%;
+    height: 900px;
+    margin-top: 100px;
+    color: rgb(255, 255, 255);
+
+    div.title {
+        padding-top: 50px;
+        box-sizing: border-box;
+    }
+
+    div.form {
+
+        box-sizing: border-box;
+        margin-top: 250px;
+        border-radius: 30px;
+        box-shadow: var(--box-shadow);
+
+        button.btn {
+            background-color: #4e57d4;
+            font-weight: 600;
+            color: whitesmoke;
+
+            &:hover {
+                background-color: red;
+                transition: 1000ms;
+            }
+        }
+    }
+
+}
+
+#contact {
+    position: relative;
+    z-index: 2;
+
+    &::after {
+        content: " ";
+        width: 100%;
+        height: 80%;
+        background: url(../image/about/about-4.avif);
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+//  End of contact section style //
+
+
+
+// start review sytle //
+section.review {
+    margin-top: 100px;
+    width: 100%;
+
+    div.review-head {
+        position: relative;
+        margin-top: 30px;
+        width: 320px;
+
+        &::after {
+            content: " ";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-color: white;
+            bottom: -14px;
+            transform: rotate(45deg);
+        }
+
+        p.review {
+            text-align: justify;
+            direction: ltr;
+            padding-top: 5px;
+            color: #4e57d4;
+        }
+    }
+
+    div.review-person {
+        img {
+            width: 90px;
+            height: 90px;
+            padding: 10px;
+            border-radius: 100%;
+
+
+        }
+
+        div.informaition {
+            padding-top: 10px;
+
+            h5 {
+                font-family: name-font;
+                font-size: 16px;
+            }
+
+            small {
+                color: red;
+            }
+        }
+    }
+}
+
+// End of review sytle //

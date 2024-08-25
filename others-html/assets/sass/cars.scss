@@ -1,0 +1,85 @@
+@font-face {
+    font-family:iransans ;
+    src: url(../font/iransans.woff2);
+    src: url(../font/IRANSansWebFaNum.eot);
+    src: url(../font/IRANSansWebFaNum.ttf);
+    src: url(../font/IRANSansWebFaNum.woff);
+}
+
+* {
+    font-family:iransans ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+// start head //
+nav.navbar {
+    background: #fff;
+    opacity: 0.9;
+    direction: rtl;
+    margin-bottom: 20px;
+
+    .container>.collapse>ul>li>ul>li {
+        direction: rtl;
+        text-align: justify;
+    }
+}
+
+div.contact {
+    width: 100%;
+    margin-top: 100px;
+
+    div.container {
+        width: 100;
+        background-color:#444f55 ;
+        border-radius: 10px;
+
+        div.row {
+            width: inherit;
+
+            div.cadr {
+                width: inherit;
+
+                div.contactUs {
+                    width: 100%;
+                    float: right;
+                }
+
+                div.box-informaition {
+                    width: 100%;
+                    float: right;
+                    margin: 20px;
+                    border-radius: 10px;
+                    background-color: rgb(255, 255, 255)
+                    
+                
+                }
+            }
+        }
+    }
+}
+
+figure.head {
+    width: 100%;
+    height: inherit;
+    background-color: #444f55;
+    margin-top: 45px;
+    padding-top: 45px;
+
+    blockquote.head>p.head {
+        text-decoration: whitesmoke;
+        display: block;
+        text-align: center;
+        color: aliceblue;
+    }
+}

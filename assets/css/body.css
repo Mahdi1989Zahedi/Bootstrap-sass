@@ -1,0 +1,256 @@
+section.about {
+  margin-top: 100px;
+}
+section.about div.image img.about {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+}
+section.about div.about {
+  margin-bottom: 20px;
+}
+section.about div.about h2 {
+  font-weight: 500;
+}
+section.about div.about p.about {
+  text-align: justify;
+  margin: 15px auto;
+}
+section.about div.card {
+  margin-top: 10px;
+}
+section.about div.card div.card-body img {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+}
+
+section.servise {
+  margin-top: 100px;
+}
+section.servise div.title h3 i {
+  padding-left: 10px;
+}
+section.servise div.service {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  box-shadow: var(--box-shadow);
+  border-radius: 8px;
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  height: 300px;
+  background-color: rgb(149, 190, 190);
+}
+section.servise div.service::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: var(--color-btn-light);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: var(--transition);
+}
+section.servise div.service:hover::after {
+  width: 100%;
+  height: 100%;
+  background: var(--color-btn);
+  z-index: -1;
+}
+section.servise div.service:hover h5,
+section.servise div.service p,
+section.servise div.service img {
+  color: white;
+}
+section.servise div.service h5 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+section.servise div.service p {
+  color: #000000;
+}
+section.servise div.service div.icon img.servise {
+  width: 100px;
+}
+
+#Counter {
+  background: linear-gradient(rgba(0, 0, 0, 0.507), rgba(38, 41, 218, 0.438)), url(../image/about/Counter-img.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+section.Counter {
+  margin-top: 100px;
+  width: 100%;
+  height: 700px;
+  position: absolute;
+}
+section.Counter div.title-Counter {
+  width: 50%;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  bottom: 50px;
+  border-radius: 10px;
+}
+section.Counter div.item-Counter {
+  padding-top: 150px;
+  font-weight: 600;
+  color: whitesmoke;
+  font-family: car-font;
+}
+section.Counter div.item-Counter h2 {
+  font-family: car-font;
+  direction: ltr;
+}
+
+section.sujest {
+  margin-top: 1000px;
+  margin-bottom: 100px;
+}
+section.sujest div.sujest-item {
+  transition: var(--transition);
+}
+section.sujest div.sujest-item div.image {
+  width: 100%;
+}
+section.sujest div.sujest-item div.image img {
+  width: 100%;
+  border-radius: 10px;
+}
+section.sujest div.sujest-item div.info-car {
+  font-family: car-font;
+  display: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section.sujest div.sujest-item div.info-car h4 {
+  font-family: car-font;
+}
+section.sujest div.sujest-item div.info-car h5.gheimat {
+  font-family: car-font;
+  background-color: orange;
+  width: 140px;
+  margin: 0 auto;
+  padding: 5px;
+  border-radius: 8px;
+}
+section.sujest div.sujest-item div.info-car button.buy {
+  background-color: rgb(140, 218, 23);
+  width: 100px;
+  padding: 8px;
+  border-radius: 8px;
+  display: inline;
+  border: none;
+  font: bold;
+  font-weight: 400;
+}
+section.sujest div.sujest-item div.info-car p {
+  font-family: car-font;
+}
+section.sujest div.sujest-item button.btn-hidden {
+  background-color: var(--color-btn);
+  padding: 8px 20px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+section.contact {
+  width: 100%;
+  height: 900px;
+  margin-top: 100px;
+  color: rgb(255, 255, 255);
+}
+section.contact div.title {
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+section.contact div.form {
+  box-sizing: border-box;
+  margin-top: 250px;
+  border-radius: 30px;
+  box-shadow: var(--box-shadow);
+}
+section.contact div.form button.btn {
+  background-color: #4e57d4;
+  font-weight: 600;
+  color: whitesmoke;
+}
+section.contact div.form button.btn:hover {
+  background-color: red;
+  transition: 1000ms;
+}
+
+#contact {
+  position: relative;
+  z-index: 2;
+}
+#contact::after {
+  content: " ";
+  width: 100%;
+  height: 80%;
+  background: url(../image/about/about-4.avif);
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+section.review {
+  margin-top: 100px;
+  width: 100%;
+}
+section.review div.review-head {
+  position: relative;
+  margin-top: 30px;
+  width: 320px;
+}
+section.review div.review-head::after {
+  content: " ";
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: white;
+  bottom: -14px;
+  transform: rotate(45deg);
+}
+section.review div.review-head p.review {
+  text-align: justify;
+  direction: ltr;
+  padding-top: 5px;
+  color: #4e57d4;
+}
+section.review div.review-person img {
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  border-radius: 100%;
+}
+section.review div.review-person div.informaition {
+  padding-top: 10px;
+}
+section.review div.review-person div.informaition h5 {
+  font-family: name-font;
+  font-size: 16px;
+}
+section.review div.review-person div.informaition small {
+  color: red;
+}
+
+/*# sourceMappingURL=body.css.map */

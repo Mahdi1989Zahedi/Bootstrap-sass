@@ -1,0 +1,87 @@
+@font-face {
+  font-family: iransans;
+  src: url(../font/iransans.woff2);
+  src: url(../font/IRANSansWebFaNum.eot);
+  src: url(../font/IRANSansWebFaNum.ttf);
+  src: url(../font/IRANSansWebFaNum.woff);
+}
+@font-face {
+  font-family: name-font;
+  src: url(../font/name-font/PlaywriteBEVLG-VariableFont_wght.ttf);
+  src: url(../font/name-font/PlaywriteBEVLG-Regular.eot);
+  src: url(../font/name-font/PlaywriteBEVLG-Regular.woff);
+  src: url(../font/name-font/PlaywriteBEVLG-Regular.woff2);
+}
+@font-face {
+  font-family: car-font;
+  src: url(../font/car-font/BebasNeue-Regular.ttf);
+  src: url(../font/car-font/BebasNeue-Regular.eot);
+  src: url(../font/car-font/BebasNeue-Regular.woff);
+  src: url(../font/car-font/BebasNeue-Regular.woff2);
+}
+figure.head {
+  width: 100%;
+  height: inherit;
+  background-color: #444f55;
+  margin-top: 45px;
+  padding-top: 45px;
+}
+figure.head blockquote.head > p.head {
+  text-decoration: whitesmoke;
+  display: block;
+  text-align: center;
+  color: aliceblue;
+}
+
+:root {
+  --color-dark: #212529;
+  --color-btn: #4e57d4;
+  --color-btn-light: #6970dd;
+  --color-body: #727272;
+  --box-shadow: 0 15px 25px #2b2b2b;
+  --transition: all 0.5s ease;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  direction: rtl;
+  font-family: iransans;
+}
+
+.line-center {
+  background-color: orangered;
+  width: 300px;
+  height: 5px;
+  margin: 10px auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.theme-shadow {
+  box-shadow: var(--box-shadow);
+}
+
+.image-zoom-wraper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-zoom-wraper img {
+  transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wraper img {
+  transform: scale(1.1);
+}
+
+div.line {
+  width: 200px;
+  height: 5px;
+  background-color: #212529;
+}
+
+/*# sourceMappingURL=main.css.map */

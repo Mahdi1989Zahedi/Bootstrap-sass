@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark: #223177;
+    --color-botton:#2d419f ;
+    --color-btn-light: #6970dd;
+    --color-body: #5b8abd;
+    --box-shadow: 0 15px 25px #2b2b2b;
+    --transition: all 0.5s ease;
+}
+
+@font-face {
+    font-family: iransans;
+    src: url(../font/iransans.woff2);
+    src: url(../font/IRANSansWebFaNum.eot);
+    src: url(../font/IRANSansWebFaNum.ttf);
+    src: url(../font/IRANSansWebFaNum.woff);
+  }
+
+  @font-face {
+    font-family: car-font;
+    src: url(../../../assets/font/car-font/BebasNeue-Regular.ttf);
+  }
+
+section.prodouct {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    div.prodouct-item {
+        width: 100%;
+        margin: 20px 0;
+
+        div.image-car {
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+
+        div.informaition-car {
+            border: 2px solid gray;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            div.name-car {
+                div.name{
+                    display: flex;
+                    font-family: car-font;
+                    font-size: 24px;
+                }
+                div.left {
+                    display: flex;
+                    background-color:var(--color-botton) ;
+                    color: white;
+                    font-size: 12px;
+                    padding: 0 10px;
+                    justify-content: center;
+                    text-align: center;
+                    height: 30px;
+                    line-height: 30px;
+                    border-radius: 8px;
+
+                    i {
+                        line-height: 30px;
+                        padding-left: 5px;
+                    }
+
+                }
+            }
+            div.about {
+                display: flex;
+                padding-top: 15px;
+                div.items {
+                    display: flex;
+
+                    div.item {
+                        padding-left: 15px;
+                    }
+                }
+                div.icons {
+                    i {
+                        padding: 0 10px;
+                        font-size: 20px;
+                        color: #0c0b0b;
+                    }
+                }
+            }
+            div.lineer {
+                width: 100%;
+                height: 2px;
+                background-color:#4d4a4a;
+                margin: 5px auto;
+            }
+            div.security {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+                span {
+                    padding-right: 10px;
+                }
+            }
+            div.gheimat {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 16px;
+                span.gheimat {
+                    font-family: car-font;
+                    font-size: 18px;
+                }
+            }
+            div.installments {
+                background-color:var(--color-body) ;
+                padding: 15px;
+                box-sizing: border-box;
+                border-radius: 10px;
+
+                div.installments-title {
+                    div.image{
+                        img{
+                            width: 30px;
+                        }
+                    }
+                    div.title{
+                        h5.title{
+                            padding-right: 20px;
+                            padding-top: 5px;
+                        }
+                    }
+                    div.paragraf{
+                        p.paragraf{
+                            padding: 20px;
+                        }
+                    }
+                }
+            }
+            div.button {
+                padding-top: 20px;
+                button.cash{
+                    padding: 5px 10px;
+                    width: 150px;
+                    height: 40px;
+                    background-color: var(--color-botton);
+                    border: none;
+                    border-radius: 8px;
+                    color: white;
+                    &:hover{
+                        color: white;
+                        font-style: normal;
+                        font-weight: 300;
+                        box-shadow: var(--box-shadow);
+                    }
+                }
+                button.installments{
+                    padding: 5px 10px;
+                    width: 150px;
+                    height: 40px;
+                    border: 2px solid var(--color-botton);
+                    color: var(--color-botton);
+                    font-weight: 600;
+                    border-radius: 8px;
+                    &:hover{
+                        background-color: #5b8abd;
+                        color: white;
+                        font-style: normal;
+                        font-weight: 300;
+                        box-shadow: var(--box-shadow);
+                    }
+                }
+            }
+        }
+
+    }
+}
